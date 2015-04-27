@@ -10,6 +10,9 @@ namespace TestingJasminFramework.Controllers
     {
         public ActionResult Index()
         {
+            int a = 5; a += 6;
+            int b = 5; b += 6;
+
             return View();
         }
 
