@@ -8,6 +8,8 @@ namespace TestingJasminFramework.Controllers
 {
     public class HomeController : Controller
     {
+        TestingDuplicates td = new TestingDuplicates();
+
         public ActionResult Index()
         {
             int a = 5; a += 6;
@@ -18,6 +20,8 @@ namespace TestingJasminFramework.Controllers
 
         public ActionResult About()
         {
+            td.PrintText("Your application description page.");
+            td.PrintText("javier");
             ViewBag.Message = "Your application description page.";
 
             return View();
@@ -28,6 +32,14 @@ namespace TestingJasminFramework.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+    }
+
+    class TestingDuplicates
+    {
+        public string PrintText(string text)
+        {
+            return text;
         }
     }
 }
