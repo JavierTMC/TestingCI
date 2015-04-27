@@ -22,6 +22,7 @@ namespace TestingJasminFramework.Controllers
         {
             td.PrintText("Your application description page.");
             td.PrintText("javier");
+            td.PrintText("naomi");
             ViewBag.Message = "Your application description page.";
 
             return View();
@@ -33,6 +34,7 @@ namespace TestingJasminFramework.Controllers
 
             return View();
         }
+
     }
 
     class TestingDuplicates
